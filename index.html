@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Organization Page by HarukaTech" />
+        <meta name="author" content="HarukaTech" />
+        <title>HaruJP - Official Page</title>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="style/style.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="#page-top">HaruJP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="bg-primary bg-gradient text-white">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder">Welcome to My Page</h1>
+                <p class="lead">This is the fastest official DNS resolver website.</p>
+                <a class="btn btn-lg btn-light" href="https://discord.gg/H8pvTY7yxK">Join Discord</a>
+            </div>
+        </header>
+        <section id="about">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>About this page</h2>
+                        <p class="lead">Welcome to this informative page dedicated to understanding DNS (Domain Name System) resolving and its intricacies. Here, we delve into the core concepts of DNS resolving, the role of DNS recursive queries, and more.</p>
+                        <ul>
+                            <li>DNS Resolving</li>
+                            <li>DNS Recursive Queries</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light" id="services">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Services we offer</h2>
+                        <p class="lead">Welcome to our services page! We are dedicated to providing top-notch solutions in the realm of DNS and related technologies. Our expertise encompasses a range of services designed to optimize your online experience, enhance security, and ensure seamless connectivity. Below are the services we offer:</p>
+                        <ul>
+                            <li>Domain Name Registration: We assist in registering your domain names, ensuring availability and compliance with domain registration rules.</li>
+                            <li>DNS Hosting: Our robust DNS hosting services guarantee reliable and high-performance DNS resolution for your domains.</li>
+                            <li>DDoS Protection: Protect your online assets from DDoS attacks with our advanced DDoS protection solutions.</li>
+                            <li>Malware and Phishing Protection: We offer solutions to detect and block malicious domains, ensuring a safe browsing environment for your users.</li>
+                            <li>DNSSEC Implementation: Enhance the security of your DNS infrastructure with DNSSEC (Domain Name System Security Extensions) implementation.</li>
+                            <li>24/7 Monitoring: Our team provides round-the-clock monitoring of your DNS infrastructure to ensure uptime and performance.</li>
+                            <li>Automatic Failover: We offer automatic failover solutions to redirect traffic in case of server failures, ensuring uninterrupted service.</li>
+                            <li>Load Balancing: Optimize your website's performance and reliability with our DNS-based load balancing solutions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Contact us</h2>
+                        <p class="lead">We're here to assist you with any inquiries, support requests, or questions you may have. Please feel free to reach out to us using the contact information below or fill out the contact form provided.</p>
+                        <h3>Contact Information:</h3>
+                        <ul>
+                            <li>Email: haru1312@gmail.com</li>
+                        </ul>
+                        <h3>Office Hours:</h2>
+                        <p>Monday - Friday: 10:00AM - 9:00PM</p>
+                        <p>Saturday: 02:00PM - 4:00AM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; HaruJP 2027</p></div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', event => {
+                const mainNav = document.body.querySelector('#mainNav');
+                    if (mainNav) {
+                        new bootstrap.ScrollSpy(document.body, {
+                        target: '#mainNav',
+                        rootMargin: '0px 0px -40%',
+                    });
+                };
+                const navbarToggler = document.body.querySelector('.navbar-toggler');
+                const responsiveNavItems = [].slice.call(
+                    document.querySelectorAll('#navbarResponsive .nav-link')
+                );
+                responsiveNavItems.map(function (responsiveNavItem) {
+                    responsiveNavItem.addEventListener('click', () => {
+                        if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                            navbarToggler.click();
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
